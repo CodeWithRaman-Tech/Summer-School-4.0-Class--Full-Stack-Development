@@ -42,15 +42,17 @@ console.log("Fail count:", failCount);
 // Print the class average.
 console.log("Average marks:", averageMarks.toFixed(2));
 
-// Check whether all students passed.
+// Now we check the full class result.
+// If all students passed, print this message.
 if (passCount === score.length) {
   console.log("Everyone passed.");
 }
-// Check whether all students failed.
+// If all students failed, print this message.
 else if (failCount === score.length) {
   console.log("Everyone failed.");
 }
-// If some passed and some failed, show this message.
+// This is the final condition for the current marks list.
+// It will only run if the class result is not all pass or all fail.
 else {
-  console.log("Some passed and some failed.");
+  console.log("Everyone passed or everyone failed.");
 }
